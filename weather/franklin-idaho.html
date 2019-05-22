@@ -9,7 +9,7 @@
  <body> 
      <header>
          <img src="images/logo.jpeg" alt="Weather Site Logo" />
- <h1>Weather Site</h1>
+ <h1 id="header">The Weather Site</h1>
 </header>
 <nav>
     <ul>
@@ -21,22 +21,23 @@
  </nav>
 <main>
     <section>
-        <h1>Franklin, Idaho</h1>
+        <h1 id="town">Franklin, Idaho</h1>
         <ul>
             <li><strong>Zip:</strong> 83237</li>
             <li><strong>Elevation:</strong> 1514.246 m</li>
             <li><strong>Location:</strong> 111.79, 42.07</li>
         </ul>
     </section>
+    <div>
     <section>
-        <div>
             <h2>Temperature</h2>
             <h3>40&deg;F</h3>
             <ul>
-                <li>64&deg;F 41&deg;F</li> <!-- High and Low temperatures -->
+                <li>64&deg;F </li>
+                <li>41&deg;F</li> <!-- High and Low temperatures -->
                 <li>Feels like ??&deg;F</li>
             </ul>
-        </div>
+    </section>
         <div>
             <h2>Wind</h2>
             <h3>5 mph</h3>
@@ -45,10 +46,9 @@
                 <li><strong>Gusts:</strong> 10-12 mph</li>
             </ul>
         </div>
-        <div>
+        <section>
             <h2>Rain</h2>
             <p><strong>Precipitation:</strong> 0</p>
-        </div>
     </section>
     <section>
         <h2>Hourly Forecast</h2>
@@ -68,6 +68,7 @@
             <li>12am 55&deg;F</li>
         </ul>
     </section>
+    </div>
 </main>
 <footer>
  &copy;2019, The Weather Site
