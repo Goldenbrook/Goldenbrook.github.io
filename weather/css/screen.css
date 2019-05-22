@@ -6,3 +6,11 @@
 4. Large Screen Rules
 
 */
+
+/* 1. Imports */
+@import url('https://fonts.googleapis.com/css?family=Sansita&display=swap');
+
+/* 2. General */
+h1,h2,h3,h4,h5,h6 {
+    font-family: Sansita, sans-serif;
+}
