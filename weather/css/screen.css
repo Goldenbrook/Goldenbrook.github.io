@@ -25,6 +25,7 @@ nav{
     left: 0px;
     right:0px;
     height: 80px;
+    color: white;
 }
 li{
     display: inline;
@@ -35,4 +36,13 @@ li{
 }
 #site-head{
     display: inline;
+}
+.center-align section{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+}
+#hour-forecast{
+    background-color: grey;
 }
