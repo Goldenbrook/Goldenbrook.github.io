@@ -17,10 +17,21 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: Sansita, sans-serif;
 }
+nav{
+    background-color: blue;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+}
+
 /* 3. Mobile Rules */
 #header{
     background-color: blue;
 }
 #site-head{
+    display: inline;
+}
+#location{
     display: inline;
 }
