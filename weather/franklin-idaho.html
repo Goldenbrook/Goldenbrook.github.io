@@ -5,11 +5,12 @@
   <title>Franklin, ID | Weather Info</title>
   <meta name="description" content="Information about Franklin, Idaho weather.">
   <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
  </head>
  <body> 
-     <header>
+     <header id="header">
          <img src="images/logo.jpeg" alt="Weather Site Logo" />
- <h1 id="header">The Weather Site</h1>
+ <h1>The Weather Site</h1>
 </header>
 <nav>
     <ul>
@@ -20,15 +21,15 @@
     </ul>
  </nav>
 <main>
-    <section>
+    <section id="title">
         <h1 id="town">Franklin, Idaho</h1>
-        <ul>
+        <ul id="location">
             <li><strong>Zip:</strong> 83237</li>
             <li><strong>Elevation:</strong> 1514.246 m</li>
             <li><strong>Location:</strong> 111.79, 42.07</li>
         </ul>
     </section>
-    <div>
+    <div class="center-align">
     <section>
             <h2>Temperature</h2>
             <h3>40&deg;F</h3>
@@ -50,7 +51,7 @@
             <h2>Rain</h2>
             <p><strong>Precipitation:</strong> 0</p>
     </section>
-    <section>
+    <section id="hour-forecast">
         <h2>Hourly Forecast</h2>
         <ul>
             <li>12pm 41&deg;F</li>
