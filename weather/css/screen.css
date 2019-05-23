@@ -45,6 +45,5 @@ li{
     background-image: url(/weather/franklinimages/rain.jpg);
 }
 #hour-forecast{
-    background-image: none;
     background-color: grey!important;
 }
