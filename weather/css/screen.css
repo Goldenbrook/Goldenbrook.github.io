@@ -17,7 +17,10 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: Sansita, sans-serif;
 }
+/* 3. Mobile Rules */
 #header{
-    display: inline-block;
     background-color: blue;
+}
+#site-head{
+    display: inline;
 }
