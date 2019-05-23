@@ -26,11 +26,13 @@ nav{
     right:0px;
     height: 80px;
 }
-
+li{
+    display: inline;
+}
 /* 3. Mobile Rules */
 #header{
     background-color: blue;
 }
-#site-head, #nav, #location{
+#site-head{
     display: inline;
 }
