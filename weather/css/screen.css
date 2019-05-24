@@ -65,3 +65,7 @@ li{
 #rain{
     background-image: url(/weather/franklinimages/rain.jpg);
 }
+#overflow{
+    white-space: nowrap;
+    overflow: auto;
+}
