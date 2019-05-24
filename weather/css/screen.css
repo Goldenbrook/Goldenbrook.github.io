@@ -47,7 +47,7 @@ li{
     border: 2px solid black;
     padding: 20px;
     text-align: center;
-    background-image: url(/weather/franklinimages/rain.jpg);
+    
 }
 #hour-forecast{
     background-color: grey!important;
@@ -61,4 +61,7 @@ li{
 }
 #windspeed{
     position: relative;
+}
+#rain{
+    background-image: url(/weather/franklinimages/rain.jpg);
 }
