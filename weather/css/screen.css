@@ -29,9 +29,14 @@ nav{
     right:0px;
     height: 80px;
     color: white;
+    text-align: center;
 }
 li{
     display: inline;
+}
+footer {
+    background-color: blue;
+    color: white;
 }
 /* 3. Mobile Rules */
 #header{
@@ -68,4 +73,16 @@ li{
 #overflow{
     white-space: nowrap;
     overflow: auto;
+}
+#rainimg{
+    position: center;
+    width: 200px;
+}
+a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color:white;
+    text-decoration: underline;
 }
