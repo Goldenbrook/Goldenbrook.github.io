@@ -4,6 +4,7 @@
 2. General
 2a.Navigation
 3. Moble Rules
+3-. Links
 4. Large Screen Rules
 
 */
@@ -16,17 +17,12 @@
 body {
     font-family: Helvetica, sans-serif;
     font-size: 20px;
-    margin-bottom: 80px;
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: Sansita, sans-serif;
 }
 nav{
-    background-color: blue;
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right:0px;
+    background-color: #0e89d5;
     height: 80px;
     color: white;
     text-align: center;
@@ -35,27 +31,39 @@ li{
     display: inline;
 }
 footer {
-    background-color: blue;
-    color: white;
+    background-color: #0e89d5;
+}
+#hi{
+    color: red;
+}
+#low{
+    color: #0e89d5;
+}
+.center-align{
+    background-image: url(/weather/franklinimages/rain.jpg);
+}
+#temp{
+    font-size: 3em;
+}
+#block{
+    display: block;
+}
+a:link, a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color:#fff;
+    text-decoration: underline;
 }
 /* 3. Mobile Rules */
 #header{
-    background-color: blue;
+    background-color: #0e89d5;
     display: flex;
     align-items: center;
 }
 #site-head{
     display: inline;
-}
-.center-align section{
-    border-radius: 25px;
-    border: 2px solid black;
-    padding: 20px;
-    text-align: center;
-    
-}
-#hour-forecast{
-    background-color: grey!important;
 }
 #wind{
     position: absolute;
@@ -67,8 +75,15 @@ footer {
 #windspeed{
     position: relative;
 }
-#rain{
-    background-image: url(/weather/franklinimages/rain.jpg);
+.borders{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(211, 211, 211, 0.8) 
+}
+#hour-forecast{
+    background-color: rgb(211, 211, 211)!important;
 }
 #overflow{
     white-space: nowrap;
@@ -78,11 +93,10 @@ footer {
     position: center;
     width: 200px;
 }
-a:link, a:visited{
-    color: white;
-    text-decoration: none;
+#nav li{
+    padding: 0 10px;
+    white-space: nowrap;
 }
-a:hover {
-    color:white;
-    text-decoration: underline;
+#nav{
+    padding-top: 30px;
 }
