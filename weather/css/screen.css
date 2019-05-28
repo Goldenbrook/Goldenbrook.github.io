@@ -27,9 +27,13 @@ nav{
     color: white;
     text-align: center;
 }
+ul{
+    padding-left: 0;
+}
 li{
     display: inline;
 }
+
 footer {
     background-color: #0e89d5;
 }
