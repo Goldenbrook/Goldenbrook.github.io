@@ -2,8 +2,16 @@
 
 1. Imports 
 2. General
-2a.Navigation
+    2a.Navigation
+    2b.ul formating
+    2c.colors
+    2d.image and fonts
+    2e.links
+    2f.header
 3. Moble Rules
+    3a.fomating
+    3b.borders
+    3c.navigation format
 3-. Links
 4. Large Screen Rules
 
@@ -21,19 +29,21 @@ body {
 h1,h2,h3,h4,h5,h6 {
     font-family: Sansita, sans-serif;
 }
+/* 2a.Nagigation */
 nav{
     background-color: #0e89d5;
     height: 80px;
     color: white;
     text-align: center;
 }
+/* 2b.ul formating */
 ul{
     padding-left: 0;
 }
 li{
     display: inline;
 }
-
+/* 2c.colors */
 footer {
     background-color: #0e89d5;
 }
@@ -43,6 +53,7 @@ footer {
 #low{
     color: #0e89d5;
 }
+/* 2d.image and fonts */
 .center-align{
     background-image: url(/weather/franklinimages/rain.jpg);
 }
@@ -52,6 +63,7 @@ footer {
 #block{
     display: block;
 }
+/* 2e.links */
 a:link, a:visited{
     color: #fff;
     text-decoration: none;
@@ -60,12 +72,14 @@ a:hover {
     color:#fff;
     text-decoration: underline;
 }
-/* 3. Mobile Rules */
+/* 2f.header */
 #header{
     background-color: #0e89d5;
     display: flex;
     align-items: center;
 }
+/* 3. Mobile Rules */
+/* 3a.fomating */
 #site-head{
     display: inline;
 }
@@ -79,6 +93,7 @@ a:hover {
 #windspeed{
     position: relative;
 }
+/* 3b.borders */
 .borders{
     border-radius: 25px;
     border: 2px solid black;
@@ -96,6 +111,7 @@ a:hover {
 #rainimg{
     width: 200px;
 }
+/* 3c.navigation format */
 #nav li{
     padding: 0 10px;
     white-space: nowrap;
