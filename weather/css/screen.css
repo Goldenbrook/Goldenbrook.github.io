@@ -102,5 +102,7 @@ a:hover {
     white-space: nowrap;
 }
 #nav{
+    display:flex;
+    justify-content: space-evenly;
     padding-top: 30px;
 }
