@@ -9,9 +9,17 @@
  </head>
  <body> 
      <header id="header">
-         <img src="images/logo.jpeg" alt="Weather Site Logo" />
+         <img src="images/logo.jpeg" alt="Weather Site Logo" id="logo" />
  <h1 id="site-head">The Weather Site</h1>
 </header>
+<nav>
+        <ul id="nav">
+         <li><a href="#" title="Go to the Weather Site current page">Current</a></li>
+         <li><a href="#" title="Search Pages">Search</a></li>
+         <li><a href="#" title="Go to Franklin Page">Franklin</a></li>
+         <li><a href="#" title="Go to Greencille Page">Greenville</a></li>
+        </ul>
+     </nav>
 <main>
     <section id="title">
         <h1 id="town">Franklin, Idaho</h1>
@@ -23,6 +31,7 @@
     </section>
 
     <div class="center-align">
+        <div id="largeframe">
 
         <section class="borders">
 
@@ -39,8 +48,8 @@
                 <div id="windspeed"><img src="/weather/franklinimages/wind-pointer.png" alt="wind dial">
                 <h3 id="wind">5 mph</h3></div>
                 <ul>
-                    <li><strong>Direction:</strong> SW</li>
-                    <li><strong>Gusts:</strong> 10-12 mph</li>
+                    <li><p><strong>Direction:</strong> SW</p></li>
+                    <li><p><strong>Gusts:</strong> 10-12 mph</p></li>
                 </ul>
             </section>
             <section class="borders">
@@ -48,6 +57,7 @@
                 <img src="/weather/franklinimages/rain.jpg" alt="rain photo" id="rainimg">
                 <p><strong>Precipitation:</strong> 0</p>
         </section>
+        </div>
         <section id="hour-forecast" class="borders">
             <h2>Hourly Forecast</h2>
             <ul id="overflow">
@@ -71,13 +81,5 @@
 <footer>
  &copy;2019, The Weather Site
 </footer>
-<nav>
-    <ul id="nav">
-     <li><a href="#" title="Go to the Weather Site current page">Current</a></li>
-     <li><a href="#" title="Search Pages">Search</a></li>
-     <li><a href="#" title="Go to Franklin Page">Franklin</a></li>
-     <li><a href="#" title="Go to Greencille Page">Greenville</a></li>
-    </ul>
- </nav>
- </body>
+</body>
 </html>
