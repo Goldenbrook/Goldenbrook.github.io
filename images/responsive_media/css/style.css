@@ -49,7 +49,11 @@ h1 {
 
 /*	Background Images - use with Small screens */
 
-.page-header {}
+.page-header {
+	background-image: url(/images/responsive_media/images/nps-logo-50.png), url(/images/responsive_media/images/looking-down-400.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
 
 
 /*******************************
@@ -170,7 +174,11 @@ h1 {
 		line-height: 1.125;
 	}
 	/*	Background Images - Use with medium screens */
-	.page-header {}
+	.page-header {
+		background-image: url(/images/responsive_media/images/nps-logo-150.png), url(/images/responsive_media/images/looking-down-1300.jpg);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
 	.page-nav {
 		position: relative;
 	}
@@ -215,7 +223,11 @@ h1 {
 		line-height: 1.05;
 	}
 	/*	Background Images - Use with large screens */
-	.page-header {}
+	.page-header {
+			background-image: url(/images/responsive_media/images/nps-logo-150.png), url(/images/responsive_media/images/looking-down-1300.jpg);
+			background-repeat: no-repeat;
+			background-position: right;
+	}
 	.page-nav li {
 		flex: 0 1 10%;
 	}
