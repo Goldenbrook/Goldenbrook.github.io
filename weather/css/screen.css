@@ -124,11 +124,13 @@ a:hover {
     display:flex;
     justify-content: space-evenly;
     padding-bottom: 10px;
+    
 }
 nav{
     position: fixed;
     bottom: 0px;
     width: 100%;
+    z-index:100;
 }
 /* 3d. font size */
 #location {
