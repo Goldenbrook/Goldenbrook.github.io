@@ -1,0 +1,16 @@
+footer{
+    padding: 2% 2%;
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 2%;
+    margin: 0% 0% 2% 0%;
+}
+
+#title {
+    padding: 2%;
+}
