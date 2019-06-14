@@ -1,6 +1,12 @@
+body{
+    width:80%;
+    margin: 0 auto;
+    background: red;
+}
+
+
 footer{
     padding: 2% 2%;
-    background-color: darkblue;
     color: aliceblue;
 }
 
@@ -9,8 +15,78 @@ footer{
     border-radius: 25px;
     padding: 2%;
     margin: 0% 0% 2% 0%;
+    min-height: 400px;
+    background-color: white;
+}
+img {
+    width: 100%;
+}
+h1 {
+    color: white;
+    font-size: 3em;
+}
+h2 {
+    color: maroon;
+    font-size: 3em;
+}
+
+p, li {
+    font-size: 30px;
+}
+
+.ex {
+    color: maroon;
+    font-size: 20px;
 }
 
 #title {
     padding: 2%;
+}
+button{
+    padding: 10px;
+    color: black;
+    background-color: aqua;
+}
+#demo {
+    color: red;
+}
+
+.example{
+    border: 5px solid red;
+    border-radius: 25px;
+    padding: 2%;
+    margin: 2% 0%;
+}
+
+.red {
+    background-color: maroon;
+    color:white;
+    padding: 1%;
+}
+
+#ex2, #log {
+    font-size: 2em;
+    color: red;
+}
+
+.warning {
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    padding: 1%;
+}
+
+a:link{
+    color: red;
+    text-decoration: none;
+}
+a:visited{
+    color: maroon;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: maroon;
+    padding: .5%;
 }

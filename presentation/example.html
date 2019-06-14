@@ -6,51 +6,120 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript Functions</title>
     <link href='screen.css' rel='stylesheet' type='text/css'>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Hello Everyone! How are you doing today?";
+        }
 
+        function myExample() {
+        let a = 20;
+        let b = 5;
+		let c = a * b;
+        document.getElementById("ex2").innerHTML = c;
+        }
+
+        var color = red;
+
+        changeColor();
+        console.log(green);
+
+        function changeColor() {
+            switch(color) {
+                case "red":
+                    color = "blue";
+                    break;
+                case "green":
+                    color = "red";
+                    break;
+                default:
+                    color = "green";
+                
+            }
+            document.getElementById("log").innerHTML = color;
+            
+        }
+
+    </script>
 </head>
 <body>
     <header><h1 id="title">JavaScript Functions</h1></header>
     <main>
     <div>
         <div class="box">
-            <h2>Title 1</h2>
-            <p>Text goes Here</p>
-            <span>
-                    <p>function goes here</p>
-            </span>
+            <h2>What is a function?</h2>
+            <p>In JavaScript, a function is used to call a block of code.</p>
+            <p>It allows you to modify parts of the page or make it interactive.</p>
+            <p>JavaScript can be both internal and external. In order to make an external scheet add a script tag with the javascript page as the src. It is best to add it at the bottom of the HTML page so that the page can load first.</p>
+            <img src="images/external-java.JPG" alt="external java">
+            <br>
+                <div class="example"><p>In the below example, when we press the button, it changes the text from "A Paragraph" to something different. Click to find out!</p>
+                    <p id="demo">A Paragraph</p>
+                    <button type="button" onclick="myFunction()">Change the Paragraph</button>
+            </div>
+            <p>In this example, when the button is pressed it calls the function myFunction() and exicutes the code.</p>
+            <img src="/presentation/images/Javascript1.JPG" alt="javascript example1">
+            <img src="images/example1.JPG" alt="example code 1">
         </div>
         <div class="box">
-                <h2>Title 1</h2>
-                <p>Text goes Here</p>
-                <span>
-                    <p>function goes here</p>
-                </span>
+                <h2>The Parts of a Function</h2>
+                <p class="warning">NOTE: This code example does not actually work, it is just showing the different parts of a function.</p>
+                <img src="images/function-pic.JPG" alt="function">
+                <p>Another way to return the function is through the use of getElementById as shown in this example.</p>
+                <img src="images/getelement.JPG" alt="getElementbyId">
+                <p>Here we can see the code being exicuted when we click on it.</p>
+                <div class="example">
+                    <p>In this example, a = 20, b = 5, and c = a + b.</p>
+                    <button type="button" onclick="myExample()">Do Function</button><br>
+                    <div id="ex2"></div><br>
+            </div><br>
+            <img src="images/ex2.JPG" alt="example 2">
         </div>
         <div class="box">
-                <h2>Title 1</h2>
-                <p>Text goes Here</p>
-                <span>
-                    <p>function goes here</p>
-                </span>
+            
+                <h2>Parameters and Arguments - What's the difference?</h2>
+                <div class="example">
+                    <p>Parameters - variables that are a part of the function, and can store the variable value.</p>
+                    <p class="ex">function myExample3( a, b, c ) {       <span class="red">&larr; The a, b, and c are parameters.</span><br>
+                            let a = 20;<br>
+                            let b = 5;<br>
+                            let c = a * b;<br>
+                            document.getElementById("ex2").innerHTML = c;<br>
+                            }
+                    </p>
+                </div>
+                <div class="example">
+                <p>Arguments - a value is placed in these spots when a function is invoked.</p>
+                        <p class="ex">myExample3( a, b, c );  <span class="red">&larr; The a, b, and c are arguments. Notice the semicolin after the called function.</span></p>
+                </div><br>
         </div>
         <div class="box">
-                <h2>Title 1</h2>
-                <p>Text goes Here</p>
-                <span>
-                    <p>function goes here</p>
-                </span>
+                <h2>console.log</h2>
+                <p>console.log is used to test your javascript to make sure that it is working the way that you want it too.</p>
+                <img src="images/consollog.JPG" alt="consolelog">
+                <div class="example">
+                        <p>consol.log</p>
+                        <button type="button" onclick="changeColor()">Do Function</button><br>
+                        <div id="log"></div><br>
+                </div>
         </div>
         <div class="box">
-                <h2>Title 1</h2>
-                <p>Text goes Here</p>
-                <span>
-                    <p>function goes here</p>
-                </span>
+                <h2>Any Questions?</h2>
+                <p>Honestly, I could go into a huge lecture about Arrays, Loops, order, strings, and a lot of other things, but time is of the essence and the best way to learn it is to do it yourself!</p>
+                <p>Here are some useful links that will help you while you relearn JavaScript. I sure know that I will be using them!</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/jsref/met_console_log.asp">console.log</a></li>
+                    <li><a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_functions1">Practicing Functions with w3schools</a></li>
+                    <li><a href="https://www.w3schools.com/jsref/jsref_obj_array.asp">Arrays</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_strings.asp">Strings</a></li>
+                    <li><a href="https://www.w3schools.com/js/js_functions.asp">Functions in General</a></li>
+                </ul>
+                <p>Didn't understand any of this? The sitepoint video explains most of the basics. I highly recoment it!</p>
+                <p><a href="https://www.sitepoint.com/premium/courses/introduction-to-javascript-2908/lesson/5/step/1" target="blank">Sitepoint Javascript</a></p>
         </div>
     </div>
     </main>
     <footer>
-            <p>&copy; Serena Spotten, 6/11/2019</p>
+            <p>&copy; Serena Spotten, 6/13/2019</p>
     </footer>
     
     
