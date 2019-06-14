@@ -7,7 +7,7 @@ const speed = 5;
 // console.log(`speed is ${speed}`);
 // console.log(`temp is ${temp}`);
 
-buildWC(speed, temp)
+buildWC(speed, temp);
 // Calculate the Windchill
 function buildWC(speed, temp) {
     const feelTemp = document.getElementById('feelTemp');
@@ -79,6 +79,54 @@ function windDial(direction){
  }
 }
 
+//Call functions
+const weatherCondition = "rain"; //Set your own value
+let weather = getCondition(weatherCondition);
+changeSummaryImage(weather);
+
+
+//Determine what the value is.
+function getCondition(weatherCondition){
+    if (weatherCondition.includes ("clear") || weatherCondition.includes("sunny")) {
+        return "clear";
+    }
+    else if (weatherCondition.includes("rain")){
+        return "rain";
+    }
+    else if (weatherCondition.includes("wind")){
+        return "wind";
+    }
+    else if (weatherCondition.includes("fog")){
+        return "fog";
+    }
+    else {
+        return "snow";
+    }
+}
+
+//Change class according to the value
+function changeSummaryImage(weatherCondition){
+    const largeframe = document.getElementById("largeframe");
+console.log(weatherCondition);
+    switch(weatherCondition){
+        case "clear":
+        largeframe.setAttribute("class", "clear");
+        break;
+        case "rain":
+        largeframe.setAttribute("class", "rain");
+        break;
+        case "wind":
+        largeframe.setAttribute("class", "wind");
+        break;
+        case  "fog":
+        largeframe.setAttribute("class", "fog");
+        break;
+        case "snow":
+        largeframe.setAttribute("class", "snow");
+        break;
+
+    }
+}
 
 
     // Convert meters to feet

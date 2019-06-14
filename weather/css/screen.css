@@ -57,9 +57,9 @@ footer {
     color: #0e89d5;
 }
 /* 2d.image and fonts */
-.center-align{
+/* #largeframe{
     background-image: url(/weather/franklinimages/rain.jpg);
-}
+} */
 #temp{
     font-size: 3em;
 }
@@ -106,6 +106,12 @@ a:hover {
 .w{
     transform: rotate(315deg);
 }
+
+/* 2bla. background images */
+
+#largeframe {
+    background-size: cover;
+   }
 
 
 
@@ -176,6 +182,24 @@ nav{
     padding-left: 10px;
 }
 
+/* 3e. background pictures */
+   
+   /* Background pictures for summary */
+   .clear {
+    background-image: url("/weather/franklinimages/sl-images/clear-400.jpg");
+   }
+   .rain {
+    background-image: url("/weather/franklinimages/sl-images/rain-400.jpg");
+   }
+   .wind {
+    background-image: url("/weather/franklinimages/sl-images/wind-400.jpg");
+   }
+   .fog {
+    background-image: url("/weather/franklinimages/sl-images/fog-400.jpg");
+   }
+   .snow {
+    background-image: url("/weather/franklinimages/sl-images/snow-400.jpg");
+   }
 
 /* 4. Large Screen Rules */
 
@@ -202,4 +226,21 @@ nav{
     #site-head{
         font-size: 2.5em;
     }
+
+    /* 4d. background images large */
+    .clear {
+        background-image: url("/weather/franklinimages/sl-images/clear-1200.jpg");
+       }
+       .rain {
+        background-image: url("/weather/franklinimages/sl-images/rain-1200.jpg");
+       }
+       .wind {
+        background-image: url("/weather/franklinimages/sl-images/wind-1200.jpg");
+       }
+       .fog {
+        background-image: url("/weather/franklinimages/sl-images/fog-1200.jpg");
+       }
+       .snow {
+        background-image: url("/weather/franklinimages/sl-images/snow-1200.jpg");
+       }
 }
