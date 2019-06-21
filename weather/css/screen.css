@@ -113,7 +113,9 @@ a:hover {
     background-size: cover;
    }
 
-
+   .hide{
+    display: none;
+  }
 
 /* 3. Mobile Rules */
 /* 3a.fomating */
@@ -191,8 +193,8 @@ nav{
    .rain {
     background-image: url("/weather/franklinimages/sl-images/rain-400.jpg");
    }
-   .wind {
-    background-image: url("/weather/franklinimages/sl-images/wind-400.jpg");
+   .cloud {
+    background-image: url("/weather/franklinimages/sl-images/clouds-400.jpg");
    }
    .fog {
     background-image: url("/weather/franklinimages/sl-images/fog-400.jpg");
@@ -234,8 +236,8 @@ nav{
        .rain {
         background-image: url("/weather/franklinimages/sl-images/rain-1200.jpg");
        }
-       .wind {
-        background-image: url("/weather/franklinimages/sl-images/wind-1200.jpg");
+       .cloud {
+        background-image: url("/weather/franklinimages/sl-images/clouds-1200.jpg");
        }
        .fog {
         background-image: url("/weather/franklinimages/sl-images/fog-1200.jpg");
