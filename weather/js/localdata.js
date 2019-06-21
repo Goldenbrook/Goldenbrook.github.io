@@ -125,8 +125,8 @@ function fetchData(weatherURL){
     document.getElementById('zipcode').innerHTML = zip;
 
     // Set Long and Lat
-    document.getElementById('long').innerHTML = longitude;
-    document.getElementById('lat').innerHTML = latitude;
+    document.getElementById('long').innerHTML = longitude + "&deg; N";
+    document.getElementById('lat').innerHTML = latitude + "&deg; W";
 
     // Set Gusts
     document.getElementById('gust').innerHTML = gusts;
