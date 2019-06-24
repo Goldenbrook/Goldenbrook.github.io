@@ -90,10 +90,10 @@ function getCondition(weatherCondition){
     if (weatherCondition.includes ("clear") || weatherCondition.includes("sunny")) {
         return "clear";
     }
-    else if (weatherCondition.includes("rain")){
+    else if (weatherCondition.includes("rain") || weatherCondition.includes("Thunderstorms")){
         return "rain";
     }
-    else if (weatherCondition.includes("cloudy") || weatherCondition.includes("Thunderstorms")){
+    else if (weatherCondition.includes("cloudy")){
         return "cloudy";
     }
     else if (weatherCondition.includes("fog")){
