@@ -4,12 +4,28 @@ let pageNav = document.getElementById('page-nav');
 let statusContainer = document.getElementById('status');
 let contentContainer = document.getElementById('main-content');
 
+pageNav.addEventListener('click', function(evt){
+
+  // Get the City name
+  let cityName = evt.target.innerHTML;
+  switch (cityName) {
+    case "Franklin":
+      case "Greenville":
+        case "Springfield":
+          evt.preventDefault(); 
+      
+      break;
+  }
+
+
+// let hourlyList = document.getElementById("hourlyData");
+
 
 let weatherURL = "../weather.json/weather.json";
-fetchData(weatherURL);
+// fetchData(weatherURL);
 
-function fetchData(weatherURL){
-  let cityName = 'Greenville'; // The data we want from the weather.json file
+// function fetchData(weatherURL){
+  // let cityName = 'Greenville'; // The data we want from the weather.json file
   fetch(weatherURL)
   .then(function(response) {
   if(response.ok){
@@ -102,7 +118,7 @@ function fetchData(weatherURL){
 
 
     // Set the temperature information
-    document.getElementById('temp').innerHTML = currTemp; 
+    document.getElementById('temp').innerHTML = currTemp + '&deg; F'; 
 
     // Set the wind information
     document.getElementById('winds').innerHTML = windSpeed;
@@ -154,4 +170,5 @@ function fetchData(weatherURL){
   console.log('There was a fetch problem: ', error.message);
   statusContainer.innerHTML = 'Sorry, the data could not be processed.';
   })
-}
+//}
+})

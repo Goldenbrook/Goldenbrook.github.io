@@ -87,16 +87,16 @@ function windDial(direction){
 
 //Determine what the value is.
 function getCondition(weatherCondition){
-    if (weatherCondition.includes ("clear") || weatherCondition.includes("sunny")) {
+    if (weatherCondition.includes ("Clear") || weatherCondition.includes("sunny")) {
         return "clear";
     }
-    else if (weatherCondition.includes("rain") || weatherCondition.includes("Thunderstorms")){
+    else if (weatherCondition.includes("Rain") || weatherCondition.includes("Thunderstorms")){
         return "rain";
     }
-    else if (weatherCondition.includes("cloudy")){
+    else if (weatherCondition.includes("Cloudy")){
         return "cloudy";
     }
-    else if (weatherCondition.includes("fog")){
+    else if (weatherCondition.includes("Fog")){
         return "fog";
     }
     else {
