@@ -117,18 +117,61 @@ function getWeather(stationId) {
       // Store weather information to localStorage 
     //    storage.setItem("latitude", data.geometry.coordinates["0"]);
     //    storage.setItem("longitude", data.geometry.coordinates["1"]);
-       storage.setItem("temp", data.properties.temperature.value);
+       storage.setItem("temp", data.properties.temperature.value.toFixed(0));
        storage.setItem("windspeed", data.properties.windSpeed.value);
        storage.setItem("currCondition", data.properties.textDescription);
+       storage.setItem("gusts", data.properties.windGust.value);
+       storage.setItem("windchill", data.properties.windChill.value);
+       storage.setItem("max", data.properties.maxTemperatureLast24Hours.value);
+       storage.setItem("min", data.properties.minTemperatureLast24Hours.value);
+       storage.setItem("precip", data.properties.precipitationLastHour.value);
+
+       // wind direction
+       //temp
+       //wind speed 
+       //Summary
        
 
    
    
       // Build the page for viewing 
       
+
+      getForcast();
+
      }) 
     .catch(error => console.log('There was a getWeather error: ', error)) 
    } // end getWeather function
+
+// Build hourly function.
+
+
+   function getForcast() {
+    const URL = "https://api.weather.gov/gridpoints/PIH/125,87/forecast"; 
+    // NWS User-Agent header (built above) will be the second parameter 
+    fetch(URL, idHeader) 
+    .then(function(response){
+      if(response.ok){ 
+       return response.json(); 
+      } 
+      throw new ERROR('Response not OK.');
+    })
+    .then(function (data) { 
+      // Let's see what we got back
+      console.log('Json object from getForcast function:'); 
+      console.log(data);
+      // Store data to localstorage 
+  
+  
+
+          //  Forcast Temperatures
+          //  Time
+          //  Windspeed
+   
+
+     }) 
+    .catch(error => console.log('There was a getForcast error: ', error)) 
+   } // end getLocation function
 
 
 let storage = window.localStorage;

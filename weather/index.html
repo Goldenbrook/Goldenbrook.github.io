@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en-us">
+ <head>
+  <meta charset="UTF-8">
+  <title id="page-title"> | Weather Info</title>
+  <meta name="description" content="Information about Greenville, Carolina weather.">
+  <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" type="text/css" href="/weather/css/screen.css" media="screen">
+        <!-- Collaboration: Serena Spotten, Kianna Baird, Zibia-->
+ </head>
+ <body> 
+     <header id="header">
+         <img src="images/logo.jpeg" alt="Weather Site Logo" id="logo" />
+ <h1 id="site-head">The Weather Site</h1>
+</header>
+<nav id="page-nav">
+        <ul id="nav">
+         <li><a href="#" title="Go to the Weather Site current page">Current</a></li>
+         <li><a href="#" title="Search Pages">Search</a></li>
+         <li><a href="franklin-idaho.html" title="Go to Franklin Page">Franklin</a></li>
+         <li><a href="greenville.html" title="Go to Greencille Page">Greenville</a></li>
+         <li><a href="#" title="Go to Springfield page">Springfield</a></li>
+        </ul>
+     </nav>
+     <section id="status">Please be patient while I get your weather information.</section>
+<main id="main-content" class="hide">
+    <section id="title">
+        <h1 id="town">??</h1>
+        <ul id="location">
+            <li><strong>Zip:</strong><span id="zipcode"> none</span> |</li>
+            <li><strong>Elevation:</strong> <span id="elevation">??</span> ft |</li>
+            <li><strong>Location:</strong> <span id="long">??</span>, <span id="lat">??</span> </li>
+        </ul>
+    </section>
+
+    <div class="center-align">
+        <div id="largeframe" class="clear">
+
+        <section class="borders" id="temps">
+
+                <h2>Temperature</h2>
+                <h3 id="temp">??&deg;F</h3>
+                <ul id="block">
+                    <li id="hi"><span id="high">??</span> &deg;F</li>
+                    <li id="low"><span id="lowTemp">??</span> &deg;F</li> <!-- High and Low temperatures -->
+                </ul>
+                <p id="feel">Feels Like <span id="feelTemp">??</span>°F</p>
+        </section>
+            <section class="borders" id="wind2">
+                <h2>Wind</h2>
+                <div id="windspeed"><div  id="dial" class="w"></div>
+                    <!-- <img src="/weather/franklinimages/wind-pointer.png" alt="wind dial"> -->
+                <h3 id="wind"><span id="winds">??</span> mph</h3></div>
+                <ul>
+                    <li><p><strong>Direction:</strong> <span id="dir">??</span></p></li>
+                    <li><p><strong>Gusts:</strong> <span id="gust">??</span></p></li>
+                </ul>
+            </section>
+            <section class="borders" id="summary">
+                <h2 id="sum-title">Summary</h2>
+                <img src="/weather/franklinimages/sl-images/rain-1000.jpg" alt="rain photo" id="rainimg">
+                <p><strong>Precipitation:</strong> <span id="precip"> None</span></p>
+        </section>
+        </div>
+        <section id="hour-forecast" class="borders">
+            <h2>Hourly Forecast</h2>
+            <ul id="overflow">
+                <li>12pm 55&deg;F</li>
+                <li>1pm 55&deg;F</li>
+                <li>2pm 56&deg;F</li>
+                <li>3pm 57&deg;F</li>
+                <li>4pm 57&deg;F</li>
+                <li>5pm 57&deg;F</li>
+                <li>6pm 59&deg;F</li>
+                <li>7pm 59&deg;F</li>
+                <li>8pm 59&deg;F</li>
+                <li>9pm 60&deg;F</li>
+                <li>10pm 61&deg;F</li>
+                <li>11pm 63&deg;F</li>
+                <li>12am 64&deg;F</li>
+            </ul>
+        </section>
+    </div>
+</main>
+<footer>
+ &copy;2019, The Weather Site
+</footer>
+<script src="js/script.js"></script>
+<script src="js/geo_loc.js"></script>
+</body>
+</html>
