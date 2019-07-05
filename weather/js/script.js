@@ -121,22 +121,28 @@ function getCondition(weatherCondition) {
 //Change class according to the value
 function changeSummaryImage(weatherCondition) {
     const largeframe = document.getElementById("largeframe");
+    const icon = document.getElementById('icon');
     console.log(weatherCondition);
     switch (weatherCondition) {
         case "clear":
             largeframe.setAttribute("class", "clear");
+            icon.setAttribute("class", "clear");
             break;
         case "rain":
             largeframe.setAttribute("class", "rain");
+            icon.setAttribute("class", "rain");
             break;
         case "cloudy":
             largeframe.setAttribute("class", "cloud");
+            icon.setAttribute("class", "cloud");
             break;
         case "fog":
             largeframe.setAttribute("class", "fog");
+            icon.setAttribute("class", "fog");
             break;
         case "snow":
             largeframe.setAttribute("class", "snow");
+            icon.setAttribute("class", "snow");
             break;
 
     }
@@ -346,6 +352,7 @@ function getForcast() {
             storage.setItem("min", data.properties.periods['1'].temperature);
             storage.setItem("windDirection", data.properties.periods['0'].windDirection);
             storage.setItem("gusts", data.properties.periods['0'].windSpeed);
+            storage.setItem("icon", data.properties.periods['0'].icon);
 
             //  Forcast Temperatures
             //  Time
@@ -463,6 +470,10 @@ function buildPage() {
     //Set windspeed in dial
     document.getElementById('winds').innerHTML = storage.getItem('windspeed');
 
+    //Set summary image
+    // let icon = document.getElementById('rainimg').innerHTML;
+    //document.getElementById('icon').innerHTML = "<img scr = '" + storage.getItem('icon') + "' alt='icon image' id='rainimg'>";
+    
 
     contentContainer.setAttribute('class', ''); // removes the hide class
     statusContainer.setAttribute('class', 'hide'); // hides the status container

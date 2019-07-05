@@ -158,8 +158,11 @@ a:hover {
     white-space: nowrap;
     overflow: auto;
 }
-#rainimg{
+#icon{
+    background-size: cover;
     width: 200px;
+    height: 200px;
+    margin: auto;
 }
 /* 3c.navigation format */
 #nav li{
