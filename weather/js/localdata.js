@@ -15,6 +15,7 @@ pageNav.addEventListener('click', function(evt){
           evt.preventDefault(); 
       
       break;
+
   }
 
 

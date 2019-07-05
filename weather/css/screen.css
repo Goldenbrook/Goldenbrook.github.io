@@ -164,6 +164,9 @@ a:hover {
     height: 200px;
     margin: auto;
 }
+#rainimg {
+    width:200px;
+}
 /* 3c.navigation format */
 #nav li{
     padding: 0 10px;
