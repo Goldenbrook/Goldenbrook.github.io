@@ -109,7 +109,7 @@ function getCondition(weatherCondition) {
         return "clear";
     } else if (weatherCondition.includes("Rain") || weatherCondition.includes("Thunderstorms")) {
         return "rain";
-    } else if (weatherCondition.includes("Cloudy")) {
+    } else if (weatherCondition.includes("Cloudy") || weatherCondition.includes("Partly Cloudy")) {
         return "cloudy";
     } else if (weatherCondition.includes("Fog")) {
         return "fog";
