@@ -1,0 +1,52 @@
+html{
+    box-sizing: border-box;
+}
+html *{box-sizing: border-box;}
+
+#recipies ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#recipies li{
+    width: 400px;
+    flex: 0 1 50%;
+    border: solid 2px #000;
+    text-align: center;
+}
+li{
+    flex: 1 1 100%;
+    text-align: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+
+}
+body{
+    background-image: url(/acme/images/site/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#logo{
+    width: 50%;
+    padding: 10px;
+}
+#body{
+    background-color: #ffffff;
+}
+#page-nav{
+    background-color: #de2226;
+    color: #ffffff;
+    padding: 10px;
+}
+#content{
+    padding: 10px;
+}
+footer{
+    padding: 10px;
+}
