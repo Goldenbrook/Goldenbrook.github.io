@@ -17,11 +17,12 @@ html *{box-sizing: border-box;}
     border: solid 2px #000;
     text-align: center;
 }
-li{
+#nav li{
     flex: 1 1 100%;
     text-align: center;
+    font-size: 1em;
 }
-ul{
+#nav ul{
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
@@ -31,6 +32,7 @@ body{
     background-image: url(/acme/images/site/background.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    margin: 0px;
 }
 #logo{
     width: 50%;
@@ -38,6 +40,7 @@ body{
 }
 #body{
     background-color: #ffffff;
+    margin: 0px 40px;
 }
 #page-nav{
     background-color: #de2226;
@@ -49,4 +52,5 @@ body{
 }
 footer{
     padding: 10px;
+    text-align: center;
 }
