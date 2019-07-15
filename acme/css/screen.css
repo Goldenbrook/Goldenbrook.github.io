@@ -3,10 +3,10 @@ html{
 }
 html *{box-sizing: border-box;}
 
-#recipies ul{
+#recipies{
     display: flex;
     flex-wrap: wrap;
-    width: 40%;
+    width: 100%;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -14,7 +14,7 @@ html *{box-sizing: border-box;}
 #recipies li{
     width: 400px;
     flex: 0 1 50%;
-    border: solid 2px #000;
+    border: solid 2px #ffffff;
     text-align: center;
 }
 #nav li{
@@ -28,10 +28,13 @@ html *{box-sizing: border-box;}
     justify-content: space-evenly;
 
 }
+li{
+    font-size: 2em;
+}
 body{
     background-image: url(/acme/images/site/background.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     margin: 0px;
 }
 #logo{
@@ -50,7 +53,41 @@ body{
 #content{
     padding: 10px;
 }
+.title{
+    padding:10px;
+    font-size: 4em;
+}
 footer{
     padding: 10px;
     text-align: center;
+}
+a:link,a:visited,a:hover,a:active{
+    color: white;
+    text-decoration: none;
+}
+#featuredimage{
+    width:100%;
+}
+.image-recipie {
+    background-color: #808080;
+}
+/* .link a{
+    color: initial;
+} */
+.recipei-image{
+    width: 50%;
+}
+#recip a{
+    color: blue;
+    text-decoration: underline;
+}
+.hide{
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    #recipies{
+        width: 80%;
+    }
+
 }

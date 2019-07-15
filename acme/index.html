@@ -11,7 +11,7 @@
     <div id="body">
     <header>
         <img src="/acme/images/site/logo.png" alt="featured image" id="logo">
-        <section id="nav">
+        <nav id="nav">
             <ul id="page-nav">
                 <li>Home</li>
                 <li>??</li>
@@ -19,18 +19,42 @@
                 <li>??</li>
                 <li>??</li>
             </ul>
-        </section>
+        </nav>
     </header>
     <main>
 
-    <section id="content">
-        <h1 id="title">Welcome to Acme!</h1>
-            <!-- <ul id="recipies">
-                    <li><img><p>Text 1</p></li>
-                    <li><img><p>Text 2</p></li>
-                    <li><img><p>Text 3</p></li> 
-                    <li><img><p>Text 4</p></li>
-                </ul> -->
+    <section id="home">
+        <section id="welcome">
+                <h1 class="title">Welcome to Acme!</h1>
+                <div><img src="/acme/images/site/feature.jpg" alt="featured image" id="featuredimage"></div>
+        </section>
+        <section id="report">
+        <h1 class="title">Acme Rocket Reviews</h1>
+        <ul id="reviews">
+            <li>"I don't know how I ever caught roadrunners before this." (9/10)</li>
+            <li>"That thing was fast!" (4/5)</li>
+            <li>"Talk about fast delivery." (5/5)</li>
+            <li>"I didn't even have to pull the meat apart." (4.5/5)</li>
+            <li>"I'm on my thirtieth one. I love these things!" (5/5)</li>
+        </ul>
+        </section>
+        <section id="recip">
+                <h1 class="title">Featured Recipies</h1>
+                <ul id="recipies">
+                        <li><div class="image-recipie"><img src="/acme/images/recipes/bbqsand.jpg" alt="bbq" class="recipei-image"></div><p><a href="#" class="link">Pulled Roadrunner BBQ</a></p></li>
+                        <li><div class="image-recipie"><img src="/acme/images/recipes/potpie.jpg" alt="potpie" class="recipei-image"></div><p><a href="#" class="link">Roadrunner Pot Pie</a></p></li>
+                        <li><div class="image-recipie"><img src="/acme/images/recipes/soup.jpg" alt="soup" class="recipei-image"></div><p><a href="#" class="link">Roadrunner Soup</a></p></li> 
+                        <li><div class="image-recipie"><img src="/acme/images/recipes/taco.jpg" alt="taco" class="recipei-image"></div><p><a href="#" class="link">Roadrunner Tacos</a></p></li>
+                    </ul>
+        </section>
+            
+    </section>
+    <section id="new-page" class="hide">
+            <h1 class="title" id="npage-title"></h1>
+            <ul>
+                <li id="npage-img"><img></li>
+                <li><p id="npage-content"></p><p id="npage-price"></p></li>
+            </ul>
     </section>
     </main>
     <footer>
