@@ -81,6 +81,14 @@ a:link,a:visited,a:hover,a:active{
     color: blue;
     text-decoration: underline;
 }
+#npage-list, #npage-productinfo{
+    list-style-type: none;
+}
+#npage-productinfo{
+    padding-left: 0px;
+}
+
+
 .hide{
     display: none;
 }

@@ -25,7 +25,7 @@
     },
     "Traps":{
       "name": "All Purpose Trap",
-      "path": "/acme-project/images/products/trap.jpg",
+      "path": "/acme/images/products/trap.jpg",
       "description": "This all purpose trap comes in a variety of colors and sizes. Great for road runners, rabbits, mice and all other tasty morsels. Made of non-rusting metal alloy, it will last for years. You won't be disappointed.",
       "manufacturer": "Traps R Us",
       "price": "20.00",

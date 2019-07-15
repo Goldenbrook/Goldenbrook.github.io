@@ -101,7 +101,22 @@ let acmeURL = "../acme/js/acme.json";
     console.log(reviews);
 
 
+    // ************ Inject the Content ******************************
+    //Set title
+    document.getElementById('npage-title').innerHTML = nametitle;
 
+    //Set Image
+    document.getElementById('npage-img').innerHTML = '<img src="' + path + '" alt="image" id="inner-img">';
+
+    //Set description of product
+    document.getElementById('npage-content').innerHTML = description;
+
+    //Set page madeby and reviews
+    document.getElementById('npage-madeby').innerHTML = manufacturer;
+    document.getElementById('npage-reviews').innerHTML = ' ' + reviews + ' stars';
+
+    //Set Price
+    document.getElementById('npage-price').innerHTML = 'Price: ' + price;
 
 
     // Change the status of the containers
