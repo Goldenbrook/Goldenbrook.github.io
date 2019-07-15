@@ -20,7 +20,7 @@ function nav(){
 
     let navname = '<li><a href="https://goldenbrook.github.io/acme/index.html">Home</a></li>';
             for (let i = 0; i < name.length; i++) {
-                navname += '<li>' + name[i] + '</li>';
+                navname += '<li><a href="' + name[i].toLowerCase() + '.html">' + name[i] + '</a></li>';
             }
             console.log(navname);
 
@@ -84,6 +84,21 @@ let acmeURL = "../acme/js/acme.json";
 
     let nametitle = g.name;
     console.log(nametitle);
+
+    let path = g.path;
+    console.log(path);
+
+    let description = g.description;
+    console.log(description);
+
+    let manufacturer = g.manufacturer;
+    console.log(manufacturer);
+
+    let price = g.price;
+    console.log(price);
+
+    let reviews = g.reviews;
+    console.log(reviews);
 
 
 
