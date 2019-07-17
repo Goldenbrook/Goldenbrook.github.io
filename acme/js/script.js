@@ -118,6 +118,9 @@ let acmeURL = "../acme/js/acme.json";
     //Set Price
     document.getElementById('npage-price').innerHTML = 'Price: ' + price;
 
+    //Set Title
+    document.getElementById('npage-id').innerHTML = nametitle;
+
 
     // Change the status of the containers
     contentContainer.setAttribute('class', ''); // removes the hide class
