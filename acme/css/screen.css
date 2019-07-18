@@ -60,7 +60,6 @@ body{
 }
 .title{
     padding:10px;
-    font-size: 4em;
 }
 footer{
     padding: 10px;
@@ -100,6 +99,9 @@ a:link,a:visited,a:hover,a:active{
 #acme-rocket h2{
     font-weight: bold;
     margin: 0px;
+}
+#actionbtn{
+    width: 100%;
 }
 
 
@@ -141,6 +143,17 @@ li {
     font-size: 15px;
 }
 
+h2, h3, h4, h5, h6, p{
+    font-size: 30px;
+}
+    /*recipies*/
+    .link{
+        font-size: 20px;
+    }
+    #recipies p{
+        margin: 10px 0px 20px 0px;
+    }
+
 
 @media only screen and (min-width: 800px) {
     #recipies{
@@ -150,11 +163,36 @@ li {
     li{
         font-size: 2em;
     }
+
+    /*top image*/
     #acme-rocket li{
         font-size: 2em;
     }
     #acme-rocket{
         padding: 30px;
     }
+    #acme-rocket{
+        background-color: transparent;
+    }
+
+    /*top title*/
+    #welcome h1{
+        font-size: 4em;
+}
+    /*recipies*/
+    #recipies p{
+        max-height: 300px !important;
+        margin: 10px 0px 20px 0px;
+    }
+
+    /*flex home page*/
+    #home{
+        display: flex;
+        flex-flow: row-reverse;
+    }
+    #recip {
+        width: 60%;
+    }
+
 
 }
