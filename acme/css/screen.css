@@ -1,3 +1,9 @@
+/* Imported Styles */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+
+/* General Styles */
+
 html{
     box-sizing: border-box;
 }
@@ -28,14 +34,12 @@ html *{box-sizing: border-box;}
     justify-content: space-evenly;
 
 }
-li{
-    font-size: 2em;
-}
 body{
     background-image: url(/acme/images/site/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 #logo{
     width: 80%;
@@ -49,6 +53,7 @@ body{
     background-color: #de2226;
     color: #ffffff;
     padding: 10px;
+    margin: 0px;
 }
 #content{
     padding: 10px;
@@ -64,10 +69,41 @@ footer{
 a:link,a:visited,a:hover,a:active{
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+/*top title*/
+#welcome h1{
+    margin: 0px;
+    font-weight: bolder;
+}
+
+/*top image*/
+
+#welcome-section{
+    position: relative;
 }
 #featuredimage{
     width:100%;
 }
+#acme-rocket{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    color: #990033;
+    list-style-type: none;
+    padding: 0px 2%;
+    margin: 0px;
+    background-color: #ffffff80;
+}
+#acme-rocket h2{
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+/*recipie images*/
 .image-recipie {
     background-color: #808080;
 }
@@ -87,15 +123,38 @@ a:link,a:visited,a:hover,a:active{
 #npage-productinfo{
     padding-left: 0px;
 }
-
-
 .hide{
     display: none;
 }
 
-@media only screen and (min-width: 600px) {
+   /********************** mobile rules **********************/
+/*top title*/
+#welcome h1{
+    font-size: 30px;
+}
+
+/*top image*/
+li {
+    font-size: 20px;
+}
+#acme-rocket li{
+    font-size: 15px;
+}
+
+
+@media only screen and (min-width: 800px) {
     #recipies{
         width: 80%;
+    }
+
+    li{
+        font-size: 2em;
+    }
+    #acme-rocket li{
+        font-size: 2em;
+    }
+    #acme-rocket{
+        padding: 30px;
     }
 
 }
