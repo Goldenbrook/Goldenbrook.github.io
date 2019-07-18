@@ -168,6 +168,9 @@ h2, h3, h4, h5, h6, p{
     #acme-rocket li{
         font-size: 2em;
     }
+    #acme-rocket h2{
+        font-size: 40px;
+    }
     #acme-rocket{
         padding: 30px;
     }
@@ -186,7 +189,7 @@ h2, h3, h4, h5, h6, p{
     }
 
     /*flex home page*/
-    #home{
+    #main-content{
         display: flex;
         flex-flow: row-reverse;
     }
