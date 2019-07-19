@@ -116,7 +116,7 @@ let acmeURL = "../acme/js/acme.json";
     document.getElementById('npage-reviews').innerHTML = ' ' + reviews + ' stars';
 
     //Set Price
-    document.getElementById('npage-price').innerHTML = 'Price: ' + price;
+    document.getElementById('npage-price').innerHTML = 'Price: $' + price;
 
     //Set Title
     document.getElementById('npage-id').innerHTML = nametitle;
