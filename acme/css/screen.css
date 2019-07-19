@@ -65,10 +65,17 @@ footer{
     padding: 10px;
     text-align: center;
 }
-a:link,a:visited,a:hover,a:active{
+a:link,a:visited{
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+a:hover,a:active{
+    color: #de2226;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px 20px;
 }
 
 /*top title*/
