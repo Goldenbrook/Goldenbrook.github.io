@@ -104,6 +104,23 @@ a:link,a:visited,a:hover,a:active{
     width: 100%;
 }
 
+/*content pages*/
+#npage-img{
+    width: 100%;
+    padding: auto;
+}
+#inner-img{
+    width: 100%;
+}
+#npage-list{
+    width: 100%;
+    margin-top: 20px;
+    padding-right: 20px;
+}
+#npage-price{
+    color: #de2226;
+    font-weight: bold;
+}
 
 /*recipie images*/
 .image-recipie {
@@ -153,7 +170,14 @@ h2, h3, h4, h5, h6, p{
     #recipies p{
         margin: 10px 0px 20px 0px;
     }
-
+    /*content page*/
+    #new-page h1{
+        font-size: 30px;
+        margin: 0px;
+    }
+#npage-content{
+    font-size: 20px;
+}
 
 @media only screen and (min-width: 800px) {
     #recipies{
@@ -162,6 +186,12 @@ h2, h3, h4, h5, h6, p{
 
     li{
         font-size: 2em;
+    }
+
+    /*logo*/
+    #logo{
+        width: 50%;
+        padding: 10px;
     }
 
     /*top image*/
@@ -195,6 +225,34 @@ h2, h3, h4, h5, h6, p{
     }
     #recip {
         width: 60%;
+    }
+
+    /*content page*/
+    #new-page h1{
+        font-size: 4em;
+        margin: 0px;
+    }
+    #npage{
+        display: flex;
+    }
+    #npage-img{
+        width: 50%;
+        padding: 0px 20px;
+    }
+    #inner-img{
+        width: 100%;
+    }
+    #npage-list{
+        width: 50%;
+        margin-top: 0px;
+    }
+    #npage-content{
+        margin-top: 0px;
+    }
+    #npage-price{
+        color: #de2226;
+        font-size: 1.5em;
+        font-weight: bold;
     }
 
 

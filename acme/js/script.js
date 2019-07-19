@@ -112,7 +112,7 @@ let acmeURL = "../acme/js/acme.json";
     document.getElementById('npage-content').innerHTML = description;
 
     //Set page madeby and reviews
-    document.getElementById('npage-madeby').innerHTML = manufacturer;
+    document.getElementById('npage-madeby').innerHTML = ' ' + manufacturer;
     document.getElementById('npage-reviews').innerHTML = ' ' + reviews + ' stars';
 
     //Set Price
