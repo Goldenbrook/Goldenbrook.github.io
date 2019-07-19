@@ -110,7 +110,7 @@ a:link,a:visited,a:hover,a:active{
     padding: auto;
 }
 #inner-img{
-    width: 100%;
+    max-width: 100%;
 }
 #npage-list{
     width: 100%;
