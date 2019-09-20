@@ -8,11 +8,18 @@
 hr {
     display: none;
 }
+
+/* image adjustments */
+
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+}
+
+figure {
+    margin: 0;
 }
 
 html {
@@ -99,34 +106,53 @@ li {
     padding: .5em;
 }
 
+/* body fonts, colors, and backgrounds */
+
 h1, h2 {
     font-family: Lora;
     color: #FAEBD7;
 }
 
-
+h2 {
+    padding: 0 0 2em 0;
+    margin-top: .5em;
+}
 
 main{
     background-color: #FAEBD7;
-    padding-top: 1em;
+    padding: 1em 0;
 }
 
 article{
     background-color: white;
-    margin: 2em;
+    margin: 1em;
     padding: 2em;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+p {
+    margin: 2em 0 0 0;
+}
+
+.post-date {
+    color: grey;
+    font-size: .9em;
 }
 
 
-
+/* Changed ruled for large screen */
 @media screen and (min-width:50em) {
-    body > div {
-        width: 80%;
-        max-width: 75em;
-        margin: 0 auto;
-    }
     article {
+        width: 75%;
+        max-width: 80em;
+        margin: 2em auto;
         flex-flow: row nowrap;
+    }
+    body > div {
+        display: flex;
+    }
+    img {
+        max-width: 50%;
     }
 }
 
