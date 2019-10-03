@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
+/*general rules*/
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  display: none;
+}
+
+/* image adjustments */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+figure {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body > div {
+  padding: 0;
+}
+
+/* Normal Links */
+p a, p a:visited {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+p a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Article Title Links */
+h2 a, h2 a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+h2 a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+
+/* Header and header links */
+header {
+  background-color: #6495ED;
+  padding: 2em;
+  text-align: right;
+}
+
+header a:link {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+
+header a:visited {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+
+header a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+hr {
+  display: block;
+  color: #FAEBD7;
+  border-width: 2px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 0.5em;
+}
+
+/* body fonts, colors, and backgrounds */
+h1, h2 {
+  font-family: Lora;
+  color: #FAEBD7;
+}
+
+h2 {
+  padding: 0 0 2em 0;
+  margin-top: 0.5em;
+}
+
+main {
+  background-color: #FAEBD7;
+  padding: 1em 0;
+}
+
+article {
+  background-color: white;
+  margin: 1em;
+  padding: 2em;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+p {
+  margin: 2em 0 0 0;
+}
+
+.post-date {
+  color: grey;
+  font-size: 0.9em;
+}
+
+/* Changed ruled for large screen */
+@media screen and (min-width: 50em) {
+  article {
+    width: 75%;
+    max-width: 80em;
+    margin: 2em auto;
+    flex-flow: row nowrap;
+  }
+
+  body > div {
+    display: flex;
+  }
+
+  img {
+    max-width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
