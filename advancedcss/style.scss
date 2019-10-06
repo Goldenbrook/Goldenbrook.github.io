@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
 
-$beage-background: #FAEBD7;
+@mixin flex-container() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+$body-background-color: #FAEBD7;
+$article-background-color: white;
+$header-backgroud-color: #6495ED;
+$link-dark: black;
+$active-link: #DEB887;
+
 
 /*general rules*/
 * {
@@ -40,78 +55,78 @@ body{
 }
 
 /* Normal Links */
-p a, p a:visited {
-    color: #6495ED;
-    text-decoration: none;
-}
-
-p a:active {
-    color:#DEB887;
-    text-decoration: none;
-}
-p a:hover {
-    text-decoration: underline;
+p {
+    a, a:visited {
+        color: $header-backgroud-color;
+        text-decoration: none; 
+    }
+    a:active {
+        color:$active-link;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
 }
 
 /* Article Title Links */
-h2 a, h2 a:visited {
-    color: black;
-    text-decoration: none;
-}
-
-h2 a:active {
-    color:#DEB887;
-    text-decoration: none;
-}
-h2 a:hover {
-    color: #6495ED;
-    text-decoration: underline;
+h2 {
+    a, a:visited {
+        color: $link-dark;
+        text-decoration: none;
+    }
+    a:active {
+        color:$active-link;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $header-backgroud-color;
+        text-decoration: underline;
+    }
 }
 
 /* Header and header links */
 
 header {
-    background-color:#6495ED;
+    background-color:$header-backgroud-color;
     padding:2em;
     text-align: right;
-}
-
-header a:link {
-    color: #FAEBD7;
-    text-decoration: none;
-}
-
-header a:visited{
-    color: #FAEBD7;
-    text-decoration: none;
-}
-header a:active{
-    color: #DEB887;
-    text-decoration: none;
-}
-header a:hover {
-    color: white;
-    text-decoration: underline;
+    a:link {
+        color: $body-background-color;
+        text-decoration: none;
+    }
+    a:visited{
+        color: $body-background-color;
+        text-decoration: none;
+    }
+    a:active{
+        color: $active-link;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $article-background-color;
+        text-decoration: underline;
+    }
 }
 
 hr { 
     display: block;
-    color: #FAEBD7;
+    color: $body-background-color;
     border-width: 2px;
 }
 
 ul {
     list-style-type: none;
-}
-li {
-    padding: .5em;
+    li {
+        padding: .5em;
+    }
 }
 
 /* body fonts, colors, and backgrounds */
 
 h1, h2 {
     font-family: Lora;
-    color: #FAEBD7;
+    color: $body-background-color;
 }
 
 h2 {
@@ -120,12 +135,12 @@ h2 {
 }
 
 main{
-    background-color: #FAEBD7;
+    background-color: $body-background-color;
     padding: 1em 0;
 }
 
 article{
-    background-color: white;
+    background-color: $article-background-color;
     margin: 1em;
     padding: 2em;
     box-shadow: 5px 5px 5px lightgray;
@@ -150,7 +165,7 @@ p {
         flex-flow: row nowrap;
     }
     body > div {
-        display: flex;
+        @include flex-container;  
     }
     img {
         max-width: 50%;
